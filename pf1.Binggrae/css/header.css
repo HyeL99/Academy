@@ -1,19 +1,8 @@
-@font-face {
-    font-family: 'Binggrae';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body{
-    font-family: 'Binggrae';
-    min-width: 1010px;
-    height: 100%;
-    font-size: 14px;
-    background: #f9fcfd url("../img/background.png") no-repeat center/cover;
-}
 header{
-    background: #fff;
+/*     background: #fff; */
+    position: absolute;
+    width: 100%;
+    min-width: 800px;
 }
 header::before {
     content: "";
@@ -26,8 +15,8 @@ header::before {
 }
 
 header div.inner { /* 하위 선택자 */
-    width: 80%;
-    height: 87px;
+    width: 95%;
+    height: 115px;
     margin: 0 auto;
     display: flex;
     padding-top:26px;
@@ -35,9 +24,9 @@ header div.inner { /* 하위 선택자 */
     align-content: center;
     position: relative;
 }
-header .inner, header .inner>* { /* > : 자식선택자를 의미, * : 모든 것들을 의미 */
-/*   border: 1px solid #333; */
-}
+/* header .inner, header .inner>* { > : 자식선택자를 의미, * : 모든 것들을 의미
+   border: 1px solid #333;
+} */
 
 header .inner h1 {
     display: flex;
@@ -53,14 +42,19 @@ header .inner h1 a{
 header .inner ul.gnb {
     display:flex;
     align-items: center;
-    gap: 10px;
 }
 header .inner ul.gnb li {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
 }
 header .inner ul.gnb li a {
+    display: block;
+    font-weight: 500;
+    padding: 16px 21px;
+}
+header .inner ul.gnb li a:hover {
+    transition-duration: 1s;
+    color: #e0462e;
 }
 header .inner ul.enb {
     display:flex;
@@ -68,9 +62,9 @@ header .inner ul.enb {
 /*     justify-content: flex-end; */
     gap: 15px;
 }
-header .inner ul.enb li {
+/* header .inner ul.enb li {
 
-}
+} */
 header .inner ul.enb li select {
     font-weight: 700;
     width: 40px;
@@ -103,6 +97,12 @@ header .inner ul.enb li a::before{
     background: #666;
     display: block;
 }
+header .inner ul.enb li a:hover{
+    border-color: red;   
+}
+header .inner ul.enb li a:hover::before{
+    background-color: red;   
+}
 header .inner ul.tnb{
     position: absolute;
     width: 100%;
@@ -112,9 +112,9 @@ header .inner ul.tnb{
     font-size: 12px;
     top: 0px;
 }
-header .inner ul.tnb li{
+/* header .inner ul.tnb li{
     
-}
+} */
 header .inner ul.tnb li a::after{
     content: "";
     display: inline-block;
@@ -124,6 +124,7 @@ header .inner ul.tnb li a::after{
     margin-left: 2px;
         
 }
+
 /* header .inner ul.enb li button a.hambuger-menu {
 }
 header .inner ul.enb li button a.hambuger-menu div {

@@ -7,8 +7,11 @@
     <title>코딩 - 빙그레</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commen.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -62,18 +65,123 @@
         
     </header>
     <!-- 타이틀 영역 -->
-    <div>
-
+    <div id="title">
+<!-- 메인 배너 영역 -->
+        <div>
+            <img src="http://www.bing.co.kr/img/main/sec01_logo.png" alt="main img">
+        </div>
+        <form class="search">
+            <input type="text" placeholder="검색어를 입력해주세요"></input>
+            <button class="search-btn">SEARCH</button>
+        </form>
+        <div class="hashtag">
+            <h2 class="hide">빙그레 해시태그</h2>
+            <ul>
+                <li class="word-btn"><a href="#">#링키바</a></li>
+                <li class="word-btn"><a href="#">#더단백</a></li>
+                <li class="word-btn"><a href="#">#요플레프로틴</a></li>
+                <li class="word-btn"><a href="#">#바나나맛우유</a></li>
+            </ul>
+        </div>
     </div>
     <!-- 내용 영역 -->
     <main>
-        <div>
-            <img src="http://www.bing.co.kr/img/main/sec01_logo.png" alt="main img">
+        <!-- 빙그레 맛 -->
+        <section id="taste">
+            <div class="inner">
+                <h2>
+                    행복한 빙그레의 맛!
+                </h2>
+                <ul class="list">
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">우유/치즈</a></li>
+                    <li><a href="#">발효유</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">주스</a></li>
+                    <!-- <li><a href="#">스낵/디저트</a></li>
+                    <li><a href="#">건강지향식품</a></li>
+                    <li><a href="#">수출제품</a></li> -->
+                </ul>
+            </div>
+        </section>
+        <section id="brand">
+            <div class="inner">
+                <h2>
+                    BRAND SHOP
+                </h2>
+                <ul class="list-brand">
+                    <li><a href="#">더:단백</a></li>
+                    <li><a href="#">아카페라</a></li>
+                    <li><a href="#">요플레</a></li>
+                    <li><a href="#">바나나맛우유</a></li>
+                    <!-- <li><a href="#">끌레도르</a></li>
+                    <li><a href="#">맨오플랜</a></li>
+                    <li><a href="#">비바시티</a></li> -->
+                </ul>
+            </div>
+        </section>
+        <div class="card-space">
+            <section class="card">
+                <h2>사이버신고</h2>
+                <p></p>
+                <button>제보하기</button>
+            </section>
+            <section class="card">
+                <h2>안전신문고</h2>
+                <p></p>
+                <button>제보하기</button>
+            </section>
+        </div>
+        <div class="fnq">
+            <section class="card">
+                <h2>자주 묻는 질문</h2>
+                <button>더보기</button>
+                <a href="#">Q. 아이스크림에는 왜 유통기한이 없나요? </a>
+                <a href="#">Q. 아이스크림에는 왜 유통기한이 없나요? </a>
+                <a href="#">Q. 유통기한 뒤에 있는 알파벳 기호는 무엇인가요?</a>
+                <a href="#">Q. 빙그레는 HACCP 인증을 모두 받았나요?</a>
+                <a href="#">Q. 바나나맛우유 유통기한을 어떻게 읽나요?</a>
+                <a href="#">Q. 빙그레 서체의 사용 범위를 알고싶어요.</a>
+            </section>
+        </div>
+        <div class="card-space">
+            <section class="card">
+                <h2>이메일 상담</h2>
+                <p>빙그레에 궁금한 사항을 문의해 주세요.</p>
+                <p>최대한 빠른 시일내에 친절하게 답변해드리겠습니다.</p>
+                <button>상담하기</button>
+            </section>
+            <section class="card">
+                <h2>전화 상담</h2>
+                <p></p>
+                <div>
+                    <p>월~금(공휴일 제외) </p>
+                    <p>09:00~17:30</p>
+                </div>
+            </section>
         </div>
     </main>
     <!-- 하단 영역 -->
     <footer>
-
+        <div class="f-top">
+            <div>빙그레 로고</div>
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+        </div>
+        <p>회사명: 빙그레</p>
+        <p>경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45(다산동)</p>
+        <div class="f-bottom">
+            <p>ⓒ Binggrae all rights reserved.</p>
+            <ul>
+                <li><img></img></li>
+                <li><img></img></li>
+                <li><img></img></li>
+            </ul>
+            <button></button>
+        </div>
     </footer>
 </body>
 </html>

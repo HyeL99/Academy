@@ -1,10 +1,128 @@
-main div{
-  position: relative;
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-main div img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 100%;
+
+h2 {
+  font-family: "Binggrae-Bold";
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section#taste {
+  width: 100%;
+  
+}
+main section#taste div.inner {
+  width:90%;
+}
+main section#taste div.inner h2 {
+  margin-bottom:30px;
+}
+main section#taste div.inner ul.list {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+  text-align: center;
+}
+main section#taste div.inner ul.list li::before{
+  content: "";
+  display: block;
+  background: #efe4db url("../img/b1.png") no-repeat center /contain;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+main section#taste div.inner ul.list li:nth-of-type(2)::before{
+  background: #f6efe0 url("../img/b2.png") no-repeat center /contain;
+}
+main section#taste div.inner ul.list li:nth-of-type(3)::before{
+  background: #f9e5e5 url("../img/b3.png") no-repeat center /contain;
+}
+main section#taste div.inner ul.list li:nth-of-type(4)::before{
+  background: #ededed url("../img/b4.png") no-repeat center /contain;
+}
+main section#taste div.inner ul.list li:nth-of-type(5)::before{
+  background: #e4f3f9 url("../img/b5.png") no-repeat center /contain;
+}
+main section#taste div.inner ul.list li:nth-of-type(6)::before{
+  background: #fcf4e5 url("../img/b6.png") no-repeat center /contain;
+}
+
+main section#taste div.inner ul.list li {
+  /*! border: 1px solid black; */
+  width: calc(100% / 6);
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+main section#taste div.inner ul.list li a {
+  background-color: #f9f9f9;
+  display: block;
+  width: 100%;
+/*   background: crimson; */
+  height: 30px;
+  line-height: 220%;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+main section#brand {
+  
+}
+main section#brand div.inner {
+  
+}
+main section#brand div.inner h2 {
+  
+}
+main section#brand div.inner ul.list {
+  
+}
+main section#brand div.inner ul.list li {
+  
+  
+}
+main section#brand div.inner ul.list li a {
+  
+}
+main div.card-space {
+  
+  
+}
+main div.card-space section.card {
+  
+}
+main div.card-space section.card h2 {
+  
+  
+}
+main div.card-space section.card p {
+  
+}
+main div.card-space section.card button {
+  
+}
+main div.fnq {
+  
+}
+main div.fnq section.card {
+  
+}
+main div.fnq section.card h2 {
+  
+}
+main div.fnq section.card button {
+  
+}
+main div.fnq section.card a {
+  
 }

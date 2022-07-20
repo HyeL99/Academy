@@ -1,0 +1,32 @@
+footer {
+    background-color: black;
+    color:white;
+    padding: 40px 50px 30px 50px;
+}
+footer div.f-top {
+}
+footer div.f-top div {
+    background: url("../img/f_logo.png") no-repeat 100%/cover;
+    width:113px;
+    height: 30px;
+}
+footer div.f-top ul {
+}
+footer div.f-top ul li {
+}
+footer div.f-top ul li a {
+}
+footer p {
+}
+footer div.f-bottom {
+}
+footer div.f-bottom p {
+}
+footer div.f-bottom ul {
+}
+footer div.f-bottom ul li {
+}
+footer div.f-bottom ul li img {
+}
+footer div.f-bottom button {
+}
