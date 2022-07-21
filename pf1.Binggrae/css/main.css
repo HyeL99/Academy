@@ -8,9 +8,10 @@
 
 h2 {
   font-family: "Binggrae-Bold";
-  font-size: 38px;
+  font-size: 2.5vw;
   font-weight: 700;
   text-align: center;
+  letter-spacing: -1.6px;
 }
 main {
   display: flex;
@@ -19,28 +20,30 @@ main {
 }
 main section#taste {
   width: 100%;
-  
+  margin-bottom: 10vw;
 }
 main section#taste div.inner {
   width:90%;
 }
 main section#taste div.inner h2 {
-  margin-bottom:30px;
+  margin-bottom:3vw;
 }
 main section#taste div.inner ul.list {
-  display: flex;
-  justify-content: space-around;
-  column-gap: 20px;
+  column-gap: 1vw;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 main section#taste div.inner ul.list li::before{
   content: "";
   display: block;
   background: #efe4db url("../img/b1.png") no-repeat center /contain;
-  width: 100%;
-  height: 200px;
+  width: 8vw;
+  height: 8vw;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 1vw;
+  padding: 1vw;
+  margin-bottom: 1vw;
 }
 main section#taste div.inner ul.list li:nth-of-type(2)::before{
   background: #f6efe0 url("../img/b2.png") no-repeat center /contain;
@@ -60,69 +63,288 @@ main section#taste div.inner ul.list li:nth-of-type(6)::before{
 
 main section#taste div.inner ul.list li {
   /*! border: 1px solid black; */
-  width: calc(100% / 6);
+  width: 10vw;
   flex-wrap: wrap;
   box-sizing: border-box;
+}
+main section#taste div.inner ul.list li:hover {
+  transform: translateY(-1.5vw);
+  transition: all 0.5s cubic-bezier(.21,.23,.25,1);
+}
+main section#taste div.inner ul.list li:hover a::after{
+  content:"VIEW MORE";
+  display: block;
+  width: 100%;
+  height: ;
+  line-height: 3vw;
+  text-align: center;
+  border-radius: 1vw;
+  transform: translateY(-3vw);
+  font-size: 1.2vw;
+  color: white;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  /*! z-index: 1; */
+  position: absolute;
+}
+main section#taste div.inner ul.list li a::after:hover{
+  content:"VIEW MORE";
+  background-color: red;
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 220%;
+  text-align: center;
+  border-radius: 5px;
+  transform: translateY(-20px);
 }
 main section#taste div.inner ul.list li a {
   background-color: #f9f9f9;
   display: block;
   width: 100%;
 /*   background: crimson; */
-  height: 30px;
-  line-height: 220%;
+  line-height: 3vw;
   text-align: center;
-  border-radius: 5px;
-  
+  border-radius: 1vw;
+  overflow: hidden;
+  font-size: 1.2vw;
+  /*! background: blue; */
+  height: 3vw;
 }
 main section#brand {
-  
+  width: 100%;
+  margin-bottom: 10vw;
 }
 main section#brand div.inner {
-  
+  width:90%;
 }
 main section#brand div.inner h2 {
-  
+   margin-bottom:3vw;
 }
-main section#brand div.inner ul.list {
-  
+main section#brand div.inner ul.list-brand {
+  column-gap: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  /*! width: 90%; */
 }
-main section#brand div.inner ul.list li {
-  
-  
+main section#brand div.inner ul.list-brand li {
+  position: relative;
+  width: 10vw;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 1vw;
+  height: 10vw;
+  border: solid 1px #edecef;
 }
-main section#brand div.inner ul.list li a {
-  
+main section#brand div.inner ul.list-brand li:hover {
+  animation-name: boxUp;
+  animation-duration: 0.3s;
+ animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+/*   transition: all 0.5s cubic-bezier(.21,.23,.25,1); */
+}
+@keyframes boxUp{
+  0%{
+    
+  }
+  100%{
+    transform: translateY(-1vw);
+    box-shadow: 0px 0px 20px #ccc;
+  }
+}
+main section#brand div.inner ul.list-brand li h3 {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 0;
+}
+main section#brand div.inner ul.list-brand li h3 img {
+  position: absolute;
+  width: 50%;
+  left:50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+main section#brand div.inner ul.list-brand li:hover h3 img {
+  position: absolute;
+  height: 20%;
+  width: auto;
+  left:50%;
+  top: 17%;
+  transform: translateX(-50%);
+}
+main section#brand div.inner ul.list-brand li>*:not(h3){
+  display: none;
+}
+main section#brand div.inner ul.list-brand li:hover p {
+  display: block;
+  width:100%;
+  text-align: center;
+  position: absolute;
+  bottom: 3.3vw;
+  font-size: 0.9vw;
+}
+main section#brand div.inner ul.list-brand li p::before{
+  display: block;
+  content:"";
+  width: 10%;
+  height: 1px;
+  background: #c9caca;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -0.7vw;
+}
+main section#brand div.inner ul.list-brand li:hover a {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  width: 90%;
+  height: 1.5vw;
+  line-height: 1.9vw;
+  margin-bottom: 0.5vw;
+  color:white;
+  border-radius: 20px;
+  font-size: 1.2vw;
 }
 main div.card-space {
   
   
 }
-main div.card-space section.card {
-  
+main div.card-space section.cyber {
+  background: url("../img/c1.png") no-repeat right / cover;
+}
+main div.card-space section.safe {
+  background: url("../img/c2.png") no-repeat right / cover;
+}
+main div.card-space section.email {
+  background: url("../img/c3.png") no-repeat right / cover;
+}
+main div.card-space section.call {
+  background: url("../img/c4.png") no-repeat right / cover;
 }
 main div.card-space section.card h2 {
-  
-  
+  text-align: start;
+  margin-bottom: 3vw;
 }
 main div.card-space section.card p {
   
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 1vw;
 }
 main div.card-space section.card button {
   
+  position: absolute;
+  bottom: 1vw;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  width: 25%;
+  height: 2.5vw;
+  line-height: 2.2vw;
+  margin-bottom: 0.6vw;
+  color: white;
+  border-radius: 5vw;
+  font-size: 1.2vw;
+  border: 0px;
 }
 main div.fnq {
+  /*! border: 1px solid red; */
+  width: 90%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border-radius: 2.5vw;
+  margin-top:4vw;
+  box-shadow: 0px 0px 3vw #ccc;
+}
+main div.fnq section.card-question {
+  
+  width:90%;
+  margin-top:4vw;
+}
+main div.fnq section.card-question div {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vw 0;
+}
+main div.fnq section.card-question div h2 {
   
 }
-main div.fnq section.card {
+main div.fnq section.card-question div a.button {
+  text-align: center;
+  border: solid 1px rgba(224, 223, 226, 0.6);
+  background:transparent;
+  width: 10vw;
+  height: 0vw;
+  line-height: 0.8vw;
+  border-radius: 5vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+  box-shadow: none;
+}
+main div.fnq section.card-question div a.button:hover {
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  color: white;
+  transition-duration: 0;
+}
+main div.fnq section.card-question a {
+  padding: 2vw;
+  background: #f9f9f9;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  margin-bottom: 1vw;
+  border-radius: 5vw;
+  font-size: 1.3vw;
+  letter-spacing: -0.09em;
+}
+main div.fnq section.card-question a:hover {
+  font-weight: 700;
+  position: relative;
+}
+main div.fnq section.card-question a:hover::after {
+  content: "→";
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  right: 1.5vw;
+  top:50%;
+  transform: translateY(-50%) rotate(-45deg);
+  text-align: center;
+  line-height: 3.5vw;
+  color:white;
+  font-weight: 700;
+  font-size: 1.5vw;
+  border-radius:10vw
+}
+main div.fnq div.card-space {
+  
+  margin-top: 3vw;
+  margin-bottom: 5vw;
+}
+main div.fnq div.card-space section.card{
+  
+  width: 27vw;
+}
+main div.fnq div.card-space section.card h2{
+}
+main div.fnq div.card-space section.card p{
   
 }
-main div.fnq section.card h2 {
+main div.fnq div.card-space section.card button{
   
 }
-main div.fnq section.card button {
+main div.fnq div.card-space section.card div{
   
 }
-main div.fnq section.card a {
+main div.fnq div.card-space section.card div p:nth-of-type(1){
+  
+}
+main div.fnq div.card-space section.card div:nth-of-type(2){
   
 }

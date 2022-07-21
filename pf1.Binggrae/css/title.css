@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  
+  position: relative;
 }
 #title div{
   display: flex;
@@ -15,6 +15,26 @@
   max-width: 100%;
   margin-top: 141px;
   left: 50%;
+  animation: fadeIn 1s 0.3s ease-in-out; /*애니메이션 이름 지속시간 딜레이시간*/
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0
+  }
+  25%{
+    transform: scale(150%);
+  }
+  50%{
+    transform: scale(110%);
+  }
+  75%{
+    transform: scale(130%);
+  }
+  100%{
+    opacity: 1
+  }
 }
 #title form.search{
   display: flex;
@@ -63,7 +83,7 @@
   font-family: 'Binggrae';
 }
 #title div.hashtag{
-  margin-bottom: 180px;
+  margin-bottom: 10vw;
 }
 #title div.hashtag ul{
   display: flex;
@@ -88,4 +108,30 @@
 #title div.hashtag ul li a:hover{
   color:blue;
   border-color:blue;
+}
+#title span::before{
+  content:"";
+  display: block;
+  width:1.5vw;
+  height: 1.5vw;
+  border: 0.1vw solid black;
+  border-top:transparent;
+  border-left: transparent;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  margin-bottom: 1vw;
+  animation: scrollAni 0.3s  ease-out infinite;
+  animation-direction: alternate;
+}
+@keyframes scrollAni{
+  0%{
+    transform: translateY(0px) rotate(45deg);
+  }
+  100%{
+    transform: translateY(-1vw) rotate(45deg);
+  }
+}
+#title span::after{
+  content:"scroll";
+  font-size: 1.3vw;
 }

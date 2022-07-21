@@ -109,12 +109,11 @@ header .inner ul.tnb{
     display: flex;
     justify-content: flex-end;
     gap: 12px;
-    font-size: 12px;
-    top: 0px;
+    top: 4px;
 }
-/* header .inner ul.tnb li{
-    
-} */
+header .inner ul.tnb li a{
+    font-size: 12px;
+}
 header .inner ul.tnb li a::after{
     content: "";
     display: inline-block;

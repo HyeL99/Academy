@@ -4,16 +4,37 @@
     font-weight: normal;
     font-style: normal;
 }
-
+html{
+  font-size:1.5vw;
+  position: relative;
+  min-width: 1200px;
+}
 body{
     font-family: 'LeferiPoint-WhiteObliqueA';
     height: 100%;
-    font-size: 14px;
     background: #fbfbfe url("../img/background.png") no-repeat 100%/cover;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top:0;
+  transform: translateX(-50%);
 }
 
 .hide{
     display: none;
+}
+.card-space{
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  width: 30vw;
+  height: 14vw;
+  padding: 2vw;
+  border-radius: 2.5vw;
+  position: relative;
+  /*! max-width: 970px; */
 }
 
 input:focus::-webkit-input-placeholder,
@@ -38,4 +59,29 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 .inner{
   width: 95%;
   margin: 0 auto;
+}
+.innerPadding{ /*카멜케이스 방식 : 첫자소문자로시작..다른단어첫자는 대문자로시작*/
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+/* flex */
+.flex{
+  display: flex;
+}
+.flexBetween{
+  justify-content: space-between;
+}
+.flexCenter{
+  justify-content: center;
+}
+.flexColumn{
+  flex-direction: column;
+}
+.flexAlignCenter{
+  align-items: center;
+}
+
+/* 트랜지션 */
+*:hover{
+  transition-duration: 0.5s;
 }
