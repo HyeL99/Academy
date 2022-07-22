@@ -8,6 +8,7 @@ html{
   font-size:1.5vw;
   position: relative;
   min-width: 1200px;
+  min-height: 100%;
 }
 body{
     font-family: 'LeferiPoint-WhiteObliqueA';
@@ -40,7 +41,9 @@ a, button{
   position: relative;
   /*! max-width: 970px; */
 }
-
+input{
+  letter-spacing: -0.09em;
+}
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
   color:transparent;
