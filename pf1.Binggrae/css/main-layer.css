@@ -1,0 +1,259 @@
+/* 빙그레맛 */
+#taste {
+    
+}
+#taste .inner {
+}
+#taste .inner h2.h2 {
+margin-bottom:50px; 
+}
+#taste .inner ul.list {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  gap: 10px;
+  text-align:center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+#taste .inner ul.list li {
+  width: calc((100% / 6) - (50px / 6));
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+#taste .inner ul.list li:hover{
+  transform: translateY(-15px);    
+}
+#taste .inner ul.list li::before{
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: yellow;
+  height: 262px;
+  border-radius: 6px;
+  margin-bottom: 11px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#taste .inner ul.list li:nth-child(1)::before{
+    background-image: url(../img/1.png);
+    background-color: #efe4db;
+}
+#taste .inner ul.list li:nth-child(2)::before{
+    background-image: url(../img/2.png);
+    background-color: #f6efe0;
+}
+#taste .inner ul.list li:nth-child(3)::before{
+    background-image: url(../img/3.png);
+    background-color: #f9e5e5;
+}
+#taste .inner ul.list li:nth-child(4)::before{
+    background-image: url(../img/4.png);
+    background-color: #ededed;
+}
+#taste .inner ul.list li:nth-child(5)::before{
+    background-image: url(../img/5.png);
+    background-color: #e4f3f9;
+}
+#taste .inner ul.list li:nth-child(6)::before{
+    background-image: url(../img/6.png);
+    background-color: #fcf4e5;
+}
+#taste .inner ul.list li a {
+  width: 100%;
+  display: block;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  line-height: 1.9;
+  position: relative;
+  overflow: hidden;
+}
+#taste .inner ul.list li a::before{
+  content: "VIEW MORE";
+  display: block;
+  background-color: red;
+  color: white;
+  position:absolute;
+  width: 100%;
+  display: none;
+}
+#taste .inner ul.list li:hover a::before{
+  display: block;
+}
+
+/* 브랜드샵 */
+#shop {
+  
+}
+#shop .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#shop .inner h2 {
+  
+  margin-bottom: 50px;
+}
+#shop .inner ul.list {
+  width: 90%;
+  gap: 10px;
+}
+#shop .inner ul.list li {
+  border-radius: 40px;
+  border: 1px solid #e1dbdb;
+  width: calc(100% / 6);
+  height: 261px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#shop .inner ul.list li:hover>*{
+  display: block;
+}
+#shop .inner ul.list li>*:not(h3){
+  display: none;
+}
+#shop .inner ul.list li h3 {
+  font-size: 0;
+}
+#shop .inner ul.list li h3 img {
+  transition: all 0.5s;
+}
+#shop .inner ul.list li h3 br {
+  
+}
+#shop .inner ul.list li p {
+  
+  line-height: 1.5;
+  text-align: center;
+}
+#shop .inner ul.list li p::before{
+  content: "";
+  width: 60px;
+  display: block;
+  border-top: 2px solid #ccc;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+#shop .inner ul.list li a {
+  background-color: red;
+  color: white;
+  width: 90%;
+  line-height: 2;
+  border-radius: 16px;
+  text-align: center;
+}
+#shop .inner ul.list li:hover>*:not(a){
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+/*   animation-direction: reverse; */
+}
+@keyframes fadeUp{
+  from{
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+#shop .inner ul.list li:hover img{
+  transform: scale(0.7);
+}
+#shop .inner ul.list li:hover a{
+  animation-name: shopFadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes shopFadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 커뮤니티 */
+#community {
+  
+}
+#community .inner {
+
+}
+#community .inner h2 {
+  
+}
+#community .inner > *{
+
+}
+#community .inner > article {
+
+}
+#community .inner > article.cyber {
+
+}
+#community .inner > article.sinmungo {
+
+}
+#community .inner > article h3 {
+  
+}
+#community .inner > article p {
+  
+}
+#community .inner > article > a {
+  
+}
+#community .inner div{
+
+}
+#community .inner div article {
+
+}
+#community .inner div article:not(.faq) {
+
+}
+#community .inner div article.faq {
+
+}
+#community .inner div article.email {
+
+}
+#community .inner div article.telephone {
+
+}
+#community .inner div article h3 {
+
+}
+#community .inner div article ul {
+
+}
+#community .inner div article ul li {
+
+}
+#community .inner div article ul li a {
+  
+}
+#community .inner div article p {
+  
+}
+#community .inner div article > a {
+  
+}
+
+
+
+
+
+
+
+
+

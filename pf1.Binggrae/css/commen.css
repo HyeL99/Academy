@@ -13,11 +13,15 @@ body{
     font-family: 'LeferiPoint-WhiteObliqueA';
     height: 100%;
     background: #fbfbfe url("../img/background.png") no-repeat 100%/cover;
-  position: absolute;
+/*   position: absolute; */
   width: 80%;
   left: 50%;
   top:0;
   transform: translateX(-50%);
+  position: relative;
+}
+a, button{
+  cursor: pointer;
 }
 
 .hide{

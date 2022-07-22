@@ -1,33 +1,127 @@
 footer {
     background-color: black;
     color:white;
-    padding: 40px 50px 30px 50px;
+    padding: 40px 3vw 30px 3vw;
     margin-top: 3vw;
+    height: 450px;
+    position: relative;
+    z-index: 1;
 }
 footer div.f-top {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 }
 footer div.f-top div {
-    background: url("../img/f_logo.png") no-repeat 100%/cover;
-    width:113px;
-    height: 30px;
+    background: url("../img/f_logo.png") no-repeat 100%/contain;
+    width:10%;
+    height: 100px;
+    font-size: 0;
 }
 footer div.f-top ul {
+    
+    display: flex;
 }
 footer div.f-top ul li {
+    margin-left: 2vw;
 }
 footer div.f-top ul li a {
+    color: #727272;
+    /*! font-size: ; */
+    font-weight: 700;
 }
 footer p {
+    font-size: 20px;
+    padding: 15px 0;
 }
 footer div.f-bottom {
+    margin-top: 5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    bottom: 0;
+    position: absolute;
+    width: 95%;
 }
 footer div.f-bottom p {
+    color: #727272;
 }
-footer div.f-bottom ul {
+footer div.f-bottom div {
+    display: flex;
+    align-items: center;
 }
-footer div.f-bottom ul li {
+footer div.f-bottom div ul {
+    display: flex;
+    
 }
-footer div.f-bottom ul li img {
+footer div.f-bottom div ul li {
+    /*! margin-left: 3vw */
 }
-footer div.f-bottom button {
+footer div.f-bottom div ul li a {
+    width: 50px;
+    height: 50px;
+    background: #1b1b1b url("../img/footer_sns01.png") no-repeat center /50%; 
+    border-radius: 10vw;
+    padding: 10px;
+    
+}
+footer div.f-bottom div ul li:nth-of-type(2) a {
+    background: #1b1b1b url("../img/footer_sns02.png") no-repeat center /50%; 
+}
+footer div.f-bottom div ul li:nth-of-type(3) a {
+    background: #1b1b1b url("../img/footer_sns03.png") no-repeat center /50%; 
+}
+footer div.f-bottom div a {
+    margin-left: 3vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    width: 355px;
+    height: 70px;
+    background: #1b1b1b;
+    border-radius: 35px;
+}
+footer div.f-bottom div> a::before {
+    content:"";
+    display: inline-block;
+    width: 65px;
+    height: 100%;
+    margin: 0 30px;
+    background: url("../img/flag_store.png") no-repeat center/contain;
+}
+footer div.f-bottom div> a::after {
+    content:"▶";
+    font-size: 15px;
+    margin-left: 67px;
+    display: inline-block;
+    /*! background: red; */
+}
+footer div.f-bottom div a strong {
+    font-weight: 1000;
+    color: white;
+}
+footer::before{
+    content:"";
+    position: absolute;
+    width: 99.25vw;
+    height: 520px;
+    display: block;
+    background: #111;
+    transform: translateX(-13vw) translateY(-40px);
+}
+footer *{
+    z-index: 1;
+}
+footer>p{
+    position: absolute;
+    z-index: 1;
+}
+footer>p:nth-of-type(2){
+    position: absolute;
+    z-index: 1;
+    left: 3vw;
+    top: 180px;
 }
