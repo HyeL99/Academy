@@ -32,7 +32,7 @@ header div.inner div.top-box a::after {
 header div.inner div.header-box {
     padding: 20px 5%;
     border-top: 1px solid #ddd;
-/*     border-bottom:1px solid #ddd; */
+/*! border-bottom:1px solid #ddd; */
 }
 header div.inner div.header-box h1 {
     font-size: 40px;
@@ -42,18 +42,35 @@ header div.inner div.header-box h1 a {
     color: transparent;
 }
 header div.inner div.header-box nav {
-}s
-header div.inner div.header-box nav ul {
 }
-header div.inner div.header-box nav ul li {
+header div.inner div.header-box nav ul {
+    align-self: flex-start;
+}
+header div.inner div.header-box nav>ul>li {
     margin: 0 30px;
     position:relative;
+    padding-bottom: 43px;
 }
-header div.inner div.header-box nav ul li a {
+header div.inner div.header-box nav>ul>li>h2 a {
     display: flex;
     position:relative;
+    font-family: "Pretendard";
+    font-weight: 300;
+    font-size: 16px;
 }
-header div.inner div.header-box>nav>ul>li>a::after {
+header div.inner div.header-box>nav>ul>li>h2 a::before {
+    content:"";
+/*     display: none; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-33px;
+    width: 30px;
+    height: 2px;
+    border-radius: 4px;
+    background: red;
+}
+header div.inner div.header-box>nav>ul>li>h2 a::after {
     content:"";
     display: none;
     position: absolute;
@@ -67,19 +84,25 @@ header div.inner div.header-box>nav>ul>li>a::after {
 header div.inner div.header-box nav>ul>li:hover>a {
     color:red;
 }
-header div.inner div.header-box nav ul li:hover a::after {
+header div.inner div.header-box nav>ul>li:hover a::after {
     display:block;
 }
-header div.inner div.header-box nav ul li ul.sub{
+header div.inner div.header-box nav>ul>li>ul.gnbsub{
     position: absolute;
     left:-30px;
     top:80px;
     width: 100%;
     
 }
-header div.inner div.header-box nav ul li ul li{
+header div.inner div.header-box nav>ul>li>ul.gnbsub li{
     float: 1;
     white-space:nowrap
+}
+header div.inner div.header-box nav>ul>li>ul.gnbsub li a{
+}
+header div.inner div.header-box nav>ul>li>ul.gnbsub li a:hover{
+    color:red;
+    transition-duration: 0.3s;
 }
 header div.inner div.header-box ul.menu {
 }
