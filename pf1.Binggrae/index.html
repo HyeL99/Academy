@@ -1,230 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>코딩 - 빙그레</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/commen.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/title.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
-    <body>
-        <!-- 상단영역 -->
-        <header>
-            <!-- div.inner>(h1>a)+(ul>li*5>a)+ul>li*2  +Ctrl+Space -->
-            <!-- 젠코딩 : https://opentutorials.org/course/128/1395
-                        https://carina16.tistory.com/59 -->
-            <!-- Sass : https://www.sassmeister.com/ -->
-            <!-- display:flex : https://studiomeal.com/archives/197 -->
-            <div class="inner">
-                <h1>
-                    <a href="">
-                        빙그레
-                    </a>
-                </h1>
-                <ul class="gnb"> <!--General Navigation Bar-->
-                    <li><a href="https://www.bing.co.kr/company/ceo">회사소개</a></li>
-                    <li><a href="https://www.bing.co.kr/product/list">제품소개</a></li>
-                    <li><a href="https://www.bing.co.kr/esg/esg">지속가능경영</a></li>
-                    <li><a href="https://www.bing.co.kr/investment/invest_announce">투자정보</a></li>
-                    <li><a href="https://www.bing.co.kr/center/service">고객센터</a></li>
-                </ul>
-                <ul class="enb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinggraeKorea</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commen.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="top-box flex jusEnd">
+                <a href="#">구매포털시스템</a>
+                <a href="#">인재채용</a>
+            </div>
+            <div class="header-box flex jusSpaBet alnCen">
+                <h1><a href="#">빙그레</a></h1>
+                <nav>
+                    <ul class="flex jusSpaBet">
+                        <li>
+                            <a href="#">회사소개</a>
+                            <!-- <ul class="sub">
+                                <li><a href="#">CEO인사말</a></li>
+                                <li><a href="#">경영이념</a></li>
+                                <li><a href="#">사업분야</a></li>
+                                <li><a href="#">히스토리</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">제품소개</a>
+                            <!-- <ul class="sub">
+                                <li><a href="#">아이스크림</a></li>
+                                <li><a href="#">우유/치즈</a></li>
+                                <li><a href="#">발효유</a></li>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">주스</a></li>
+                                <li><a href="#">스낵/디저트</a></li>
+                                <li><a href="#">건강지향식품</a></li>
+                                <li><a href="#">수출제품</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">지속가능경영</a>
+                            <!-- <ul class="sub">
+                                <li><a href="#">지속가능경영 체계</a></li>
+                                <li><a href="#">Eco-Friendly</a></li>
+                                <li><a href="#">Shared Value</a></li>
+                                <li><a href="#">Global Intefrity</a></li>
+                                <li><a href="#">윤리준법경영</a></li>
+                                <li><a href="#">사회공헌</a></li>
+                                <li><a href="#">보고서 및 정책</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">투자정보</a>
+                            <!-- <ul class="sub">
+                                <li><a href="#">전자공고</a></li>
+                                <li><a href="#">주식정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">재무정보</a></li>
+                                <li><a href="#">IR 정보</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <!-- <ul class="sub">
+                                <li><a href="#">고객상담</a></li>
+                                <li><a href="#">사이버신고</a></li>
+                                <li><a href="#">안전신문고</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="menu flex alnCen">
                     <li>
-                    <select name="" id="">
-                            <option value="korea">kr</option>
-                            <option value="english">en</option>
-                            <option value="china">cn</option>
-                    </select>
+                        <select name="" id="">
+                            <option value="korean">KR</option>
+                            <option value="english">EN</option>
+                            <option value="chinese">CN</option>
+                        </select>
                     </li>
-                    <li>
-                        <!-- <button>
-                            <a href="#" class="hambuger-menu">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </a>
-                        </button> -->
-                        <a href="#">
-                            전체메뉴보기
-                        </a>
-                    </li>
-                </ul>
-                <ul class="tnb">
-                    <li><a href="#">구매포털시스템</a></li>
-                    <li><a href="#">인재채용</a></li>
+                    <li><a>전체메뉴보기</a></li>
                 </ul>
             </div>
-        </header>
-        <!-- 타이틀 영역 -->
-        <div id="title">
-    <!-- 메인 배너 영역 -->
-            <div>
-                <img src="http://www.bing.co.kr/img/main/sec01_logo.png" alt="main img">
-            </div>
-            <form class="search">
-                <input type="text" placeholder="검색어를 입력해주세요"></input>
-                <button class="search-btn">SEARCH</button>
-            </form>
-            <div class="hashtag">
-                <h2 class="hide">빙그레 해시태그</h2>
+            <!-- <div class="sub flex jusSpaBet">
                 <ul>
-                    <li class="word-btn"><a href="#">#링키바</a></li>
-                    <li class="word-btn"><a href="#">#더단백</a></li>
-                    <li class="word-btn"><a href="#">#요플레프로틴</a></li>
-                    <li class="word-btn"><a href="#">#바나나맛우유</a></li>
+                    <li><a href="#">CEO인사말</a></li>
+                    <li><a href="#">경영이념</a></li>
+                    <li><a href="#">사업분야</a></li>
+                    <li><a href="#">히스토리</a></li>
                 </ul>
-            </div>
-            <span class="scroll"></span>
+                <ul>
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">우유/치즈</a></li>
+                    <li><a href="#">발효유</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">주스</a></li>
+                    <li><a href="#">스낵/디저트</a></li>
+                    <li><a href="#">건강지향식품</a></li>
+                    <li><a href="#">수출제품</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">지속가능경영 체계</a></li>
+                    <li><a href="#">Eco-Friendly</a></li>
+                    <li><a href="#">Shared Value</a></li>
+                    <li><a href="#">Global Intefrity</a></li>
+                    <li><a href="#">윤리준법경영</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">보고서 및 정책</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">주식정보</a></li>
+                    <li><a href="#">공시정보</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">IR 정보</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">고객상담</a></li>
+                    <li><a href="#">사이버신고</a></li>
+                    <li><a href="#">안전신문고</a></li>
+                </ul>
+            </div> -->
+            <div class="sub-back"></div>
         </div>
-        <!-- 내용 영역 -->
-        <main>
-            <!-- 빙그레 맛 -->
+    </header>
+    <div id="title">
+        <div class="inner">
+            <div class="img-place">
+                <img src="img/mainImage.png" alt="main img">
+            </div>
+            <div class="input-space flex jusSpaBet">
+                <input type="text" placeholder="제품명을 입력해 주세요">
+                <a class="button" href="#">SEARCH</a>
+            </div>
+            <ul class="hash-place flex jusCen">
+                <li><a href="#" class="button">#링키바</a></li>
+                <li><a href="#" class="button">#더단백</a></li>
+                <li><a href="#" class="button">#요플레프로틴</a></li>
+                <li><a href="#" class="button">#바나나맛우유</a></li>
+            </ul>
+            <div class="scroll-place">
+                <p>SCROLL</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="inner">
             <section id="taste">
-                <div class="inner innerPadding">
-                    <h2>
-                        행복한 빙그레의 맛!
-                    </h2>
-                    <ul class="list">
-                        <li><a href="https://www.bing.co.kr/product/list?type=icecream">아이스크림</a></li>
-                        <li><a href="https://www.bing.co.kr/product/list?type=milk">우유/치즈</a></li>
-                        <li><a href="https://www.bing.co.kr/product/list?type=yogurt">발효유</a></li>
-                        <li><a href="https://www.bing.co.kr/product/list?type=coffee">커피</a></li>
-                        <li><a href="https://www.bing.co.kr/product/list?type=beverage">음료</a></li>
-                        <li><a href="https://www.bing.co.kr/product/list?type=juice">주스</a></li>
-                        <!-- <li><a href="#">스낵/디저트</a></li>
-                        <li><a href="#">건강지향식품</a></li>
-                        <li><a href="#">수출제품</a></li> -->
-                    </ul>
-                </div>
+                <h2>행복한 빙그레의 맛!</h2>
+                <ul class="flex carousel-inner jusSpaBet">
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">우유/치즈</a></li>
+                    <li><a href="#">발효유</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">주스</a></li>
+                </ul>
             </section>
-            <!-- 브랜드샵 -->
             <section id="brand">
-                <div class="inner innerPadding">
-                    <h2>
-                        BRAND SHOP
-                    </h2>
-                    <ul class="list-brand">
-                        <li>
-                            <h3><img src="./img/l1.png" alt="더:단백"><br />더:단백</h3>
+                <h2>BRAND SHOP</h2>
+                <ul class="flex carousel-inner jusSpaBet">
+                    <li>
+                        <div class="flex fCol alnCen">
+                            <img src="img/l1.png" alt="더:단백">
                             <p>빙그레 건강 tft의<br />단백질 전문 브랜드</p>
-                            <a href="#">구입하기</a>
-                        </li>
-                        <li>
-                            <h3><img src="./img/l2.png" alt="아카페라"><br />아카페라</h3>
+                            <a href="#" class="button">구입하기</a>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="flex fCol alnCen">
+                            <img src="img/l2.png" alt="아카페라">
                             <p>부담없는 캐주얼한 커피</p>
-                            <a href="#">구입하기</a>
-                        </li>
-                        <li>
-                            <h3><img src="./img/l3.png" alt="요플레"><br />요플레</h3>
+                            <a href="#" class="button">구입하기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex fCol alnCen">
+                            <img src="img/l3.png" alt="요플레">
                             <p>39년 전통의<br />대한민국 Heritage</p>
-                            <a href="#">구입하기</a>
-                        </li>
-                        <li>
-                            <h3><img src="./img/l4.png" alt="바나나맛우유"><br />바나나맛우유</h3>
+                            <a href="#" class="button">구입하기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex fCol alnCen">
+                            <img src="img/l4.png" alt="바나나맛우유">
                             <p>대한민국을 대표하는<br />No.1 가공우유</p>
-                            <a href="#">구입하기</a>
-                        </li>
-                        <li>
-                            <h3><img src="./img/l5.png" alt="끌레도르"><br />끌레도르</h3>
+                            <a href="#" class="button">구입하기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex fCol alnCen">
+                            <img src="img/l5.png" alt="끌레도르">
                             <p>진한 맛의 감동<br />프리미엄 아이스크림</p>
-                            <a href="#">구입하기</a>
-                        </li>
-                        <li>
-                            <h3><img src="./img/l6.png" alt="맨오플랜"><br />마노플랜</h3>
+                            <a href="#" class="button">구입하기</a>                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex fCol alnCen">
+                            <img src="img/l6.png" alt="마노플랜">
                             <p>남자를 위한 건강플랜,<br />마노플랜</p>
-                            <a href="#">구입하기</a>
-                        </li>
-                    <!-- 
-                        <li>
-                            <h3><img src="./img/l7.png" alt="비바시티">비바시티</h3>
-                            <p>맛과 건강의 완벽한 조화,<br />비바시티</p>
-                            <a href="#">구입하기</a>
-                        </li>
-                    -->
-                    </ul>
-                </div>
+                            <a href="#" class="button">구입하기</a>
+                        </div>
+                    </li>
+                </ul>
             </section>
-            <div class="card-space">
-                <section class="card cyber">
+            <section id="help" class="flex jusSpaBet">
+                <article class="card">
                     <h2>사이버신고</h2>
                     <p>빙그레 임직원의 부당한 요구 또는<br />업무 처리, 기타 부정행위 제보</p>
-                    <a href="#">제보하기</a>
-                </section>
-                <section class="card safe">
+                    <a href="#" class="button">제보하기</a>
+                </article>
+                <article class="card">
                     <h2>안전신문고</h2>
                     <p>빙그레 종사자의 유해·위험요소 및<br />안전·보건에 관한 의견 제보</p>
-                    <a href="#">제보하기</a>
-                </section>
-            </div>
-            <div class="fnq">
-                <section class="card-question">
-                    <div>
+                    <a href="#" class="button">제보하기</a>
+                </article>
+            </section>
+            <section id="service">
+                <article class="fnq">
+                    <div class="fnq-header flex jusSpaBet alnCen">
                         <h2>자주 묻는 질문</h2>
-                        <a href="#" class="button">더보기</a>
+                        <a href="#">더보기</a>
                     </div>
-                    <div class="fnqList">
-                        <a href="#">Q.아이스크림에는 왜 유통기한이 없나요?</a>
-                        <a href="#">Q.구매일이 불분명하고 영수증이 없지만 제품의 유통기한이 지났습니다.</a>
-                        <a href="#">Q.유통기한 뒤에 있는 알파벳 기호는 무엇인가요?</a>
-                        <a href="#">Q.빙그레는 HACCP 인증을 모두 받았나요?</a>
-                        <a href="#">Q.바나나맛우유 유통기한을 어떻게 읽나요?</a>
-                        <a href="#">Q.빙그레 서체의 사용 범위를 알고싶어요.</a>
-                    </div>
-                    
-                </section>
-                <div class="card-space">
-                    <section class="card email">
+                    <ul class="flex fWrap jusSpaBet">
+                        <li><a href="#">Q. 아이스크림에는 왜 유통기한이 없나요?</a></li>
+                        <li><a href="#">Q.구매일이 불분명하고 영수증이 없지만 제품의 유통기한이 지났습니다.</a></li>
+                        <li><a href="#">Q.유통기한 뒤에 있는 알파벳 기호는 무엇인가요?</a></li>
+                        <li><a href="#">Q.빙그레는 HACCP 인증을 모두 받았나요?</a></li>
+                        <li><a href="#">Q.바나나맛우유 유통기한을 어떻게 읽나요?</a></li>
+                        <li><a href="#">Q.빙그레 서체의 사용 범위를 알고싶어요.</a></li>
+                    </ul>
+                </article>
+                <div class="card-space flex jusSpaBet">
+                    <article class="card email">
                         <h2>이메일 상담</h2>
-                        <p>빙그레에 궁금한 사항을 문의해 주세요.</p>
-                        <p>최대한 빠른 시일내에 친절하게 답변해드리겠습니다.</p>
-                        <a>상담하기</a>
-                    </section>
-                    <section class="card call">
+                        <p>빙그레에 궁금한 사항을 문의해 주세요.<br />최대한 빠른 시일내에 친절하게 답변해드리겠습니다. </p>
+                        <a href="#" class="button">상담하기</a>
+                    </article>
+                    <article class="card call">
                         <h2>전화 상담</h2>
                         <a href="tel:080-022-0056">080.022.0056</a>
-                        <div>
-                            <p>월~금(공휴일 제외) </p>
-                            <p>09:00~17:30</p>
-                        </div>
-                    </section>
+                        <p>월~금(공휴일 제외) <span>09:00~17:30</span></p>
+                    </article>
+                </div>
+            </section>
+        </div>  
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="f-top flex jusSpaBet">
+                <img src="img/f_logo.png" alt="빙그레">
+                <div class="f-rt">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">오시는길</a>
                 </div>
             </div>
-            
-        </main>
-        <!-- 하단 영역 -->
-        <footer>
-            <div class="f-top">
-                <div>빙그레 로고</div>
-                <ul>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">오시는길</a></li>
-                </ul>
+            <div class="f-middle">
+                <adress>회사명 : 빙그레<br />경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45(다산동)</adress>
             </div>
-            <p>회사명: 빙그레</p>
-            <p>경기도 남양주시 다산동 4344-3 / 경기도 남양주시 다산순환로 45(다산동)</p>
-            <div class="f-bottom">
+            <div class="f-bottom flex jusSpaBet alnCen">
                 <p>ⓒ Binggrae all rights reserved.</p>
-                <div>
-                    <ul>
-                        <li><a href="https://www.instagram.com/binggraekorea/"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCOmz8eDBQ04h6i0_8p_V7eg"></a></li>
-                        <li><a href="https://www.tftmall.co.kr/main/index.php"></a></li>
-                    </ul>
-                    <a>Flagship store  <strong>Soft Lab</strong></a>
+                <div class="button-place flex">
+                    <a href="#" class="bottom-button">인스타그램</a>
+                    <a href="#" class="bottom-button">유튜브</a>
+                    <a href="#" class="bottom-button">tft몰</a>
+                    <a href="#" class="bottom-button">Flagship store <strong>Soft Lab</strong></a>
                 </div>
             </div>
-        </footer>
-        <div class="fix-button">
-            <a href="#">SHOP</a>
-            <a href="#">↑</a>
         </div>
-        <div class="footer-background"></div>
-    </body>
+    </footer>
+    <aside>
+        <a href="#">SHOP</a>
+        <a href="#">↑</a>
+    </aside>
+</body>
 </html>

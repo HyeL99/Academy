@@ -1,141 +1,99 @@
-#title{
-/*   height: 100%; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  position: relative;
+#title {
 }
-#title div{
-  display: flex;
-  justify-content: center;
+#title div.inner div.img-place {
+  margin-top: 150px;
 }
-#title div img{
-  top: 0;
-  max-width: 100%;
-  margin-top: 141px;
-  left: 50%;
+#title div.inner div.img-place img {
+  display: block;
   animation: fadeIn 1s 0.3s ease-in-out; /*애니메이션 이름 지속시간 딜레이시간*/
   animation-fill-mode: both;
   animation-direction: alternate;
+  width: 80%;
+  margin: 0 auto;
 }
-@keyframes fadeIn{
-  0%{
-    opacity: 0
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  25%{
+  25% {
     transform: scale(150%);
   }
-  50%{
+  50% {
     transform: scale(110%);
   }
-  75%{
+  75% {
     transform: scale(130%);
   }
-  100%{
-    opacity: 1
+  100% {
+    opacity: 1;
   }
 }
-#title form.search{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 78%;
-  height: 60px;
-  margin: 25px 0;
-  padding: 0 10px 0 40px;
-  box-shadow: 2px 0 10px #ccc;
-  border-radius: 50px;
-  box-sizing: border-box;
-  max-width: 741px;
+#title div.inner div.input-space {
+  width: 80%;
+  height: 100%;
   background: white;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(125, 125, 125, 0.7);
+  padding: 10px;
+  border-radius: 40px;
 }
-#title form.search::before{
-  content:"";
-  background: url(../img/search_icon.png) no-repeat center left;
+#title div.inner div.input-space input {
+  width: 80%;
+}
+#title div.inner div.input-space::before {
+  content: "";
+  display: block;
   width: 30px;
   height: 30px;
-  padding-left: 15px;
-
+  background: url(../img/search_icon.png) no-repeat center left;
+  margin: auto;
+  margin-left: 20px;
 }
-#title form.search input{
-  border: 0px;
-  width: 100%;
-  height: 90%;
-  font-size: 17px;
-  letter-spacing: -0.85px;
-  font-family: 'LeferiPoint-WhiteObliqueA';
+#title div.inner div.input-space a {
 }
-#title form.search input:focus{ /* :focus - input태그 안에 커서를 위치시키는 행위 */ 
-  outline:none;
+#title div.inner ul.hash-place {
+  margin-top: 30px;
 }
-#title form.search button{
-  max-width: 180px;
-  width: 30%;
-  height: 48px;
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
-  background-image: linear-gradient(to top, #ed1c24, #e0462e);
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0px;
-  font-family: 'Binggrae';
+#title div.inner ul.hash-place li {
 }
-#title div.hashtag{
-  margin-bottom: 10vw;
-}
-#title div.hashtag ul{
-  display: flex;
-  justify-content: center;
-  gap: 7px;
-}
-#title div.hashtag ul li{
-  min-width: 120px;
-  
-}
-#title div.hashtag ul li a{
-  display: block;
-  height: 37px;
+#title div.inner ul.hash-place li a {
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 2.5;
+  margin: 8px;
   background: transparent;
-  line-height: 2.3;
-  text-align: center;
-  border-radius: 18.5px;
-  padding: 0 20px;
-  border: 1px solid #edecef;
- 
-  letter-spacing: -0.09em;
+  color: #000;
+  border: 1px solid rgb(125, 125, 125);
+  font-weight: 300;
 }
-#title div.hashtag ul li a:hover{
-  color:blue;
-  border-color:blue;
+#title div.inner div.scroll-place {
 }
-#title span::before{
-  content:"";
-  display: block;
-  width:1.5vw;
-  height: 1.5vw;
-  border: 0.1vw solid black;
-  border-top:transparent;
-  border-left: transparent;
+#title div.inner div.scroll-place p::before {
+  content: "";
   margin: 0 auto;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-left: transparent;
+  border-top: transparent;
   transform: rotate(45deg);
-  margin-bottom: 1vw;
-  animation: scrollAni 0.3s  ease-out infinite;
-  animation-direction: alternate;
+  margin-bottom: 20px;
+  animation: scrollAni 0.4s ease-out alternate infinite;
+  transform-origin: center;
 }
-@keyframes scrollAni{
-  0%{
-    transform: translateY(0px) rotate(45deg);
+@keyframes scrollAni {
+  0% {
+    transform: rotate(45deg) translateX(0) translateY(0);
   }
-  100%{
-    transform: translateY(-1vw) rotate(45deg);
+  100% {
+    transform: rotate(45deg) translateX(-15px) translateY(-15px);
   }
 }
-#title span::after{
-  content:"scroll";
-  font-size: 1.3vw;
-}
-#title span{
-  transform:translateY(-5vw);
+#title div.inner div.scroll-place p {
+  position: relative;
+  text-align: center;
+  margin-top: 58px;
+  margin-bottom: 100px;
 }

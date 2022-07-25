@@ -1,94 +1,101 @@
-@font-face {
-    font-family: 'LeferiPoint-WhiteObliqueA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-html{
-  font-size:1.5vw;
-  position: relative;
-  min-width: 1200px;
-  min-height: 100%;
-}
-body{
-    font-family: 'LeferiPoint-WhiteObliqueA';
-    height: 100%;
-    background: #fbfbfe url("../img/background.png") no-repeat 100%/cover;
-/*   position: absolute; */
-  width: 80%;
-  left: 50%;
-  top:0;
-  transform: translateX(-50%);
-  position: relative;
-}
-a, button{
-  cursor: pointer;
-}
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
-.hide{
-    display: none;
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-.card-space{
-  width:90%;
-  display: flex;
-  justify-content: space-between;
+/* commen */
+body {
+  background: url("../img/background.png") no-repeat top/100%;
+  font-family: "Pretendard";
+  text-align: center;
+  font-weight: 300;
 }
-.card{
-  width: 30vw;
-  height: 14vw;
-  padding: 2vw;
-  border-radius: 2.5vw;
-  position: relative;
-  /*! max-width: 970px; */
+h2 {
+  font-family: "Binggrae-Bold";
+  font-size: 30px;
+  font-weight: 700;
 }
-input{
-  letter-spacing: -0.09em;
+input {
+  outline: none;
+  border: 0px;
+  font-family: "Pretendard";
 }
 input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
-  color:transparent;
+textarea:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
 }
-
 input:focus:-moz-placeholder,
-textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color:transparent;
+textarea:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: transparent;
 }
 
 input:focus::-moz-placeholder,
-textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color:transparent;
+textarea:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: transparent;
 }
 
 input:focus:-ms-input-placeholder,
-textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color:transparent;
-}
-.inner{
-  width: 95%;
-  margin: 0 auto;
-}
-.innerPadding{ /*카멜케이스 방식 : 첫자소문자로시작..다른단어첫자는 대문자로시작*/
-  padding-top: 20px;
-  padding-bottom: 60px;
-}
-/* flex */
-.flex{
-  display: flex;
-}
-.flexBetween{
-  justify-content: space-between;
-}
-.flexCenter{
-  justify-content: center;
-}
-.flexColumn{
-  flex-direction: column;
-}
-.flexAlignCenter{
-  align-items: center;
+textarea:focus:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: transparent;
 }
 
-/* 트랜지션 */
-*:hover{
-  transition-duration: 0.5s;
+/* class */
+.card {
+  height: 250px;
+  background: url("../img/c1.png") no-repeat center right/cover;
+  border-radius: 30px;
+  width: 42%;
+  text-align: start;
+  padding: 3.5%;
+}
+.carousel-inner {
+  width: 100%;
+}
+.button {
+  display: block;
+  width: 180px;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  height: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 2.3;
+  color: white;
+  font-weight: 700;
+}
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.fCol {
+  flex-direction: column;
+}
+.jusCen {
+  justify-content: center;
+}
+.jusSpaBet {
+  justify-content: space-between;
+}
+.alnCen {
+  align-items: center;
+}
+.jusEnd {
+  justify-content: flex-end;
+}
+.fWrap {
+  flex-wrap: wrap;
 }
