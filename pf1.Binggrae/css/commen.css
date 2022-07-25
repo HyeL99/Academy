@@ -10,7 +10,7 @@
 }
 /* commen */
 body {
-  background: url("../img/background.png") no-repeat top/100%;
+  background: #f8fbfd url("../img/background.png") no-repeat top/100%;
   font-family: "Pretendard";
   text-align: center;
   font-weight: 300;
