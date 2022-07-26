@@ -5,7 +5,7 @@ position: fixed;
     width:100%;
 /*     border: 1px solid red; */
     z-index: 1;
-    background: rgba(255,255,255,0.3);
+    /*! background: rgba(255,255,255,0.5); */
 }
 header div.inner {
     width:100%;
@@ -30,12 +30,14 @@ header div.inner div.top-box a::after {
     display: flex;
 }
 header div.inner div.header-box {
+    position: relative;
     padding: 20px 5%;
     border-top: 1px solid #ddd;
 /*! border-bottom:1px solid #ddd; */
 }
 header div.inner div.header-box h1 {
     font-size: 40px;
+    align-self: flex-start;
 }
 header div.inner div.header-box h1 a {
     background: url("../img/logo-pc.png") no-repeat center/contain;
@@ -44,12 +46,40 @@ header div.inner div.header-box h1 a {
 header div.inner div.header-box nav {
 }
 header div.inner div.header-box nav ul {
-    align-self: flex-start;
+    margin-top: 12px;
+}
+header div.inner div.header-box nav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 106px;
+    background: rgb(255,255,255,0);
+    left:0;
+    top:-26px;
+    z-index: -1;
+}
+header div.inner div.header-box nav:hover::before{
+    height: 390px;
+    background: rgb(255,255,255,1);
+    transition-duration: 0.5s;
+}
+header div.inner div.header-box nav:hover::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgb(125,125,125,0.5);
+    left:0;
+    top:79px;;
 }
 header div.inner div.header-box nav>ul>li {
     margin: 0 30px;
     position:relative;
-    padding-bottom: 43px;
+    align-self: flex-start;
+}
+header div.inner div.header-box nav:hover>ul>li {
+    padding-bottom: 296px;
+    transition: 0.5s;
 }
 header div.inner div.header-box nav>ul>li>h2 a {
     display: flex;
@@ -60,15 +90,19 @@ header div.inner div.header-box nav>ul>li>h2 a {
 }
 header div.inner div.header-box>nav>ul>li>h2 a::before {
     content:"";
-/*     display: none; */
+    display: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom:-33px;
-    width: 30px;
+    width: 40px;
     height: 2px;
     border-radius: 4px;
     background: red;
+    z-index: 1;
+}
+header div.inner div.header-box>nav>ul>li:hover>h2 a::before {
+    display: block;
 }
 header div.inner div.header-box>nav>ul>li>h2 a::after {
     content:"";
@@ -88,23 +122,35 @@ header div.inner div.header-box nav>ul>li:hover a::after {
     display:block;
 }
 header div.inner div.header-box nav>ul>li>ul.gnbsub{
+    display: block;
     position: absolute;
-    left:-30px;
-    top:80px;
+    left:0;
+    top:54px;
     width: 100%;
+    text-align: start;
+    font-size: 14px;
+    transform: scale(0);
+    opacity: 0;
     
 }
-header div.inner div.header-box nav>ul>li>ul.gnbsub li{
+header div.inner div.header-box nav:hover>ul>li>ul.gnbsub{
     float: 1;
-    white-space:nowrap
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 0.3s 0.5s ease-in;
+}
+header div.inner div.header-box nav>ul>li>ul.gnbsub li{
+    white-space:nowrap;
+    padding: 7px 0;
 }
 header div.inner div.header-box nav>ul>li>ul.gnbsub li a{
 }
-header div.inner div.header-box nav>ul>li>ul.gnbsub li a:hover{
+header div.inner div.header-box nav>ul>li>ul.gnbsub li:hover a{
     color:red;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 header div.inner div.header-box ul.menu {
+    align-self: flex-start;
 }
 header div.inner div.header-box ul.menu li {
     margin-left: 20px;
