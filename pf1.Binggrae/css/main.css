@@ -51,12 +51,25 @@
 #taste ul li:nth-of-type(6) a::before {
   background: #fcf4e5 url("../img/b6.png") no-repeat center/20%;
 }
-
-#brand {
+#brand{
+  position: relative;
+}
+#brand::before {
+  content:"BRAND";
+  position: absolute;
+  /*top: 161px; */
+  left: 0;
+  transform: translateX(-50px) translateY(20px) rotate(90deg);
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 70px;
+  color: rgba(125,125,125,0.5);
+  transform-origin: 0 75%;
 }
 #brand h2 {
   margin-top: 200px;
   margin-bottom: 50px;
+  position: relative;
 }
 #brand ul {
   margin: 0 auto;

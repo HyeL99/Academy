@@ -46,7 +46,7 @@ header div.inner div.header-box h1 a {
 header div.inner div.header-box nav {
 }
 header div.inner div.header-box nav ul {
-    margin-top: 12px;
+    /*! margin-top: 12px; */
 }
 header div.inner div.header-box nav::before{
     content: "";
@@ -76,6 +76,7 @@ header div.inner div.header-box nav>ul>li {
     margin: 0 30px;
     position:relative;
     align-self: flex-start;
+    padding-top: 12px;
 }
 header div.inner div.header-box nav:hover>ul>li {
     padding-bottom: 296px;
@@ -90,10 +91,10 @@ header div.inner div.header-box nav>ul>li>h2 a {
 }
 header div.inner div.header-box>nav>ul>li>h2 a::before {
     content:"";
-    display: none;
+    display: block;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0);
     bottom:-33px;
     width: 40px;
     height: 2px;
@@ -103,6 +104,8 @@ header div.inner div.header-box>nav>ul>li>h2 a::before {
 }
 header div.inner div.header-box>nav>ul>li:hover>h2 a::before {
     display: block;
+    transform: translateX(-50%) scale(1);
+    transition: 0.5s
 }
 header div.inner div.header-box>nav>ul>li>h2 a::after {
     content:"";
@@ -125,19 +128,18 @@ header div.inner div.header-box nav>ul>li>ul.gnbsub{
     display: block;
     position: absolute;
     left:0;
-    top:54px;
+    top:71px;
     width: 100%;
     text-align: start;
     font-size: 14px;
     transform: scale(0);
     opacity: 0;
-    
 }
 header div.inner div.header-box nav:hover>ul>li>ul.gnbsub{
     float: 1;
     transform: scale(1);
     opacity: 1;
-    transition: opacity 0.3s 0.5s ease-in;
+    transition: opacity 0.2s 0.5s ease-in;
 }
 header div.inner div.header-box nav>ul>li>ul.gnbsub li{
     white-space:nowrap;
