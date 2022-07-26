@@ -67,6 +67,12 @@ textarea:focus:-ms-input-placeholder {
 .jusSpaBet {
   justify-content: space-between;
 }
+.jusSpaAnd{
+  justify-content: space-around;
+}
+.alnStr{
+  align-items: flex-start;
+}
 .alnCen {
   align-items: center;
 }
