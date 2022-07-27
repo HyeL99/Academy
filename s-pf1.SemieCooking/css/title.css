@@ -3,24 +3,33 @@
 #title div.inner {
 }
 #title div.inner div.carousel {
-  position: relative;
+  position:relative;
 }
 #title div.inner div.carousel img {
   width: 100%;
 }
-#title div.inner div.carousel button {
+#title div.inner div.carousel div.carousel-btn {
   position: absolute;
-  bottom:5%;
+  bottom: 10px;
+  left: 50%;
+  width: 80px;
+  height: 15px;
+  transform: translateX(-50%);
+}
+#title div.inner div.carousel div.carousel-btn button {
+  height: 15px;
+  border-radius: 7px;
+}
+#title div.inner div.carousel div.carousel-btn button:hover {
+  border: 3px solid #009752;
 }
 #title div.inner div.carousel button:nth-of-type(1){
-  left: 48%;
-  width:2%;
-  height:10px;
-  border:2px solid #009752;
+  width:50px;
+  border: 3px solid #009752;
+  background: #009752;
 }
 #title div.inner div.carousel button:nth-of-type(2) {
-  right: 48%;
-  width: 1%;
-  height:12px;
-  border: 3px solid rgba(125,125,125,1);
+  width: 15px;
+  border: 3px solid rgba(200,200,200);
+  background: white;
 }

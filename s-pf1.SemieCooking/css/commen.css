@@ -7,6 +7,14 @@
 body{
   font-family: 'GowunDodum-Regular';
 }
+button{
+  cursor: pointer;
+}
+h2{
+  font-size: 24px;
+  font-weight: 700;
+  
+}
 
 ::selection{
   background: #009752;
@@ -40,6 +48,7 @@ body{
 .inner {
   width: 90%;
   margin: 0 auto;
+  max-width: 1360px;
 }
 .innerUl{
   display: none;
