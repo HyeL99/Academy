@@ -139,26 +139,41 @@ main div.goTop {
   width:calc(100% / 3);
   height: 0;
   padding-bottom: 17%;
+  position: relative;
 }
 #story div.inner ul li.storyCard>h3 {
   color: black;
   position: relative;
+  position: absolute;
+  /*! left: 0; */
+  bottom: 67px;
+  width: 100%;
 }
 #story div.inner ul li.storyCard p {
   line-height: 1.7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
 }
 #story div.inner ul li.storyCard h3::before{
   content:"";
   position: absolute;
   display: block;
-  width: 50%;
-  padding-bottom:50%;
+  width: 30%;
+  padding-bottom: 30%;
   height: 0;
-  top:0;
+  bottom:330%;
   left:50%;
   transform: translateX(-50%);
-  background: red;
+  background: url("../img/keep.svg") no-repeat center /contain;
   z-index: -1;
+}
+#story div.inner ul li.storyCard:nth-of-type(2) h3::before{
+  background: url("../img/clean.svg") no-repeat center /contain;
+}
+#story div.inner ul li.storyCard:nth-of-type(3) h3::before{
+  background: url("../img/green.svg") no-repeat center /contain;
 }
 #story div.inner a.view {
 }

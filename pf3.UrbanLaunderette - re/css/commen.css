@@ -80,7 +80,7 @@ textarea:focus:-ms-input-placeholder {
   margin: 0 auto;
 }
 .hide{
-  display:none;
+  display:none !important;
 }
 .padding100{
   padding: 100px 0;
